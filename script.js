@@ -16,7 +16,7 @@ const Gameboard = (() => {
     const getBoard = () => board;
 
     const placeMarker = (row, column, player) => {
-        if (board[row][column] === 0) {
+        if (board[row][column].getValue === 0) {
             board[row][column].addMarker(player);
         } else {
             console.log('Spot already taken!')
